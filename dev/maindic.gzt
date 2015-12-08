@@ -3,14 +3,14 @@ import "base.proto";           // подключаем описания protobuf
 import "articles_base.proto";  // Файлы base.proto и articles_base.proto встроены в компилятор.
                                // Их необходимо включать в начало любого gzt-словаря.
 
-import "facttypes.proto"; // подключаем списо интепретируемых фактов
+import "facttypes.proto"; // подключаем список интепретируемых фактов
 import "dayweek.gzt"; // подключаем словарь
 
 
 // статьи с нашими грамматиками:
 
 
-TAuxDicArticle "наша_первая_грамматика"
+TAuxDicArticle "главная_грамматика"
 {
-    key = { "tomita:first.cxx" type=CUSTOM }
+    key = { "tomita:main.cxx" type=CUSTOM }
 }
