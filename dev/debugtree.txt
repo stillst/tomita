@@ -1,0 +1,303 @@
+===================== date.cxx =====================
+
+coverage: 5, weight: 0.33484848
+Date  ->  DayOfWeek[*пятницу]  Comma[,]  Day[9]  Month[марта]  Year[1934 года] :: 0.34
+|   
+|__ DayOfWeek  ->  Noun[*пятницу]<kwt=день_недели> :: 0.66666666
+|       Noun  ->  пятницу :: 1
+|   
+|__ Comma  ->  , :: 1
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+|       Noun  ->  марта :: 1
+|   
+|__ Year  ->  Year[*1934]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1934] :: 0.66666666
+    |       AnyWord  ->  1934 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33555555
+Date  ->  DayOfWeek[*пятницу]  Comma[,]  Day[9]  Month[марта] :: 0.35
+|   
+|__ DayOfWeek  ->  Noun[*пятницу]<kwt=день_недели> :: 0.66666666
+|       Noun  ->  пятницу :: 1
+|   
+|__ Comma  ->  , :: 1
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+        Noun  ->  марта :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33555555
+Date  ->  Day[*9]  Month[марта] :: 0.43333333
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+        Noun  ->  марта :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.33515151
+Date  ->  DayOfWeek[*пятницу]  Comma[,]  Day[9]  Month[марта]  Year[1934] :: 0.34333333
+|   
+|__ DayOfWeek  ->  Noun[*пятницу]<kwt=день_недели> :: 0.66666666
+|       Noun  ->  пятницу :: 1
+|   
+|__ Comma  ->  , :: 1
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+|       Noun  ->  марта :: 1
+|   
+|__ Year  ->  AnyWord[*1934] :: 0.66666666
+        AnyWord  ->  1934 :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33515151
+Date  ->  Day[*9]  Month[марта]  Year[1934] :: 0.36666666
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+|       Noun  ->  марта :: 1
+|   
+|__ Year  ->  AnyWord[*1934] :: 0.66666666
+        AnyWord  ->  1934 :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33515151
+Date  ->  Month[*марта]  Year[1934] :: 0.43333333
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+|       Noun  ->  марта :: 1
+|   
+|__ Year  ->  AnyWord[*1934] :: 0.66666666
+        AnyWord  ->  1934 :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.33484848
+Date  ->  Day[*9]  Month[марта]  Year[1934 года] :: 0.35
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+|       Noun  ->  марта :: 1
+|   
+|__ Year  ->  Year[*1934]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1934] :: 0.66666666
+    |       AnyWord  ->  1934 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33484848
+Date  ->  Month[*марта]  Year[1934 года] :: 0.36666666
+|   
+|__ Month  ->  Noun[*марта]<kwt=месяц> :: 0.66666666
+|       Noun  ->  марта :: 1
+|   
+|__ Year  ->  Year[*1934]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1934] :: 0.66666666
+    |       AnyWord  ->  1934 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+
+
+==================== multiwords ====================
+
+марта: TAuxDicArticle, 
+	месяц, 
+пятницу: TAuxDicArticle, 
+	день_недели, 
+пятницу_,_9_марта_1934_года: TAuxDicArticle, 
+	дата, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+
+
+===================== date.cxx =====================
+
+coverage: 4, weight: 0.34333333
+Date  ->  Day[*1]  Month[сентября]  Year[1941 года] :: 0.35
+|   
+|__ Day  ->  AnyWord[*1] :: 0.66666666
+|       AnyWord  ->  1 :: 1
+|   
+|__ Month  ->  Noun[*сентября]<kwt=месяц> :: 0.66666666
+|       Noun  ->  сентября :: 1
+|   
+|__ Year  ->  Year[*1941]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1941] :: 0.66666666
+    |       AnyWord  ->  1941 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+coverage: 2, weight: 0.33461538
+Date  ->  Day[*12]  Month[октября] :: 0.43333333
+|   
+|__ Day  ->  AnyWord[*12] :: 0.66666666
+|       AnyWord  ->  12 :: 1
+|   
+|__ Month  ->  Noun[*октября]<kwt=месяц> :: 0.66666666
+        Noun  ->  октября :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.36666666
+Date  ->  Day[*1]  Month[сентября] :: 0.43333333
+|   
+|__ Day  ->  AnyWord[*1] :: 0.66666666
+|       AnyWord  ->  1 :: 1
+|   
+|__ Month  ->  Noun[*сентября]<kwt=месяц> :: 0.66666666
+        Noun  ->  сентября :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.35
+Date  ->  Day[*1]  Month[сентября]  Year[1941] :: 0.36666666
+|   
+|__ Day  ->  AnyWord[*1] :: 0.66666666
+|       AnyWord  ->  1 :: 1
+|   
+|__ Month  ->  Noun[*сентября]<kwt=месяц> :: 0.66666666
+|       Noun  ->  сентября :: 1
+|   
+|__ Year  ->  AnyWord[*1941] :: 0.66666666
+        AnyWord  ->  1941 :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.35
+Date  ->  Month[*сентября]  Year[1941] :: 0.43333333
+|   
+|__ Month  ->  Noun[*сентября]<kwt=месяц> :: 0.66666666
+|       Noun  ->  сентября :: 1
+|   
+|__ Year  ->  AnyWord[*1941] :: 0.66666666
+        AnyWord  ->  1941 :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.34333333
+Date  ->  Month[*сентября]  Year[1941 года] :: 0.36666666
+|   
+|__ Month  ->  Noun[*сентября]<kwt=месяц> :: 0.66666666
+|       Noun  ->  сентября :: 1
+|   
+|__ Year  ->  Year[*1941]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1941] :: 0.66666666
+    |       AnyWord  ->  1941 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+
+
+==================== multiwords ====================
+
+12_октября: TAuxDicArticle, 
+	дата, 
+1_сентября_1941_года: TAuxDicArticle, 
+	дата, 
+октября: TAuxDicArticle, 
+	месяц, 
+сентября: TAuxDicArticle, 
+	месяц, 
+
+
+==================== multiwords ====================
+
+
+
+===================== date.cxx =====================
+
+coverage: 4, weight: 0.34333333
+Date  ->  Day[*9]  Month[апреля]  Year[1943 года] :: 0.35
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*апреля]<kwt=месяц> :: 0.66666666
+|       Noun  ->  апреля :: 1
+|   
+|__ Year  ->  Year[*1943]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1943] :: 0.66666666
+    |       AnyWord  ->  1943 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.36666666
+Date  ->  Day[*9]  Month[апреля] :: 0.43333333
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*апреля]<kwt=месяц> :: 0.66666666
+        Noun  ->  апреля :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.35
+Date  ->  Day[*9]  Month[апреля]  Year[1943] :: 0.36666666
+|   
+|__ Day  ->  AnyWord[*9] :: 0.66666666
+|       AnyWord  ->  9 :: 1
+|   
+|__ Month  ->  Noun[*апреля]<kwt=месяц> :: 0.66666666
+|       Noun  ->  апреля :: 1
+|   
+|__ Year  ->  AnyWord[*1943] :: 0.66666666
+        AnyWord  ->  1943 :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.35
+Date  ->  Month[*апреля]  Year[1943] :: 0.43333333
+|   
+|__ Month  ->  Noun[*апреля]<kwt=месяц> :: 0.66666666
+|       Noun  ->  апреля :: 1
+|   
+|__ Year  ->  AnyWord[*1943] :: 0.66666666
+        AnyWord  ->  1943 :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.34333333
+Date  ->  Month[*апреля]  Year[1943 года] :: 0.36666666
+|   
+|__ Month  ->  Noun[*апреля]<kwt=месяц> :: 0.66666666
+|       Noun  ->  апреля :: 1
+|   
+|__ Year  ->  Year[*1943]  YearDescr[года] :: 0.43333333
+    |   
+    |__ Year  ->  AnyWord[*1943] :: 0.66666666
+    |       AnyWord  ->  1943 :: 1
+    |   
+    |__ YearDescr  ->  год[*года] :: 0.66666666
+            год  ->  года :: 1
+
+
+
+==================== multiwords ====================
+
+9_апреля_1943_года: TAuxDicArticle, 
+	дата, 
+апреля: TAuxDicArticle, 
+	месяц, 
+
+
