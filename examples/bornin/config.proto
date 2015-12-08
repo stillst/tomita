@@ -7,8 +7,6 @@ TTextMinerConfig {
 
   Input = {
     File = "test.txt";
-    //File = "wikitext.1K";
-    Type = dpl;
   }
 
   Articles = [
@@ -19,7 +17,9 @@ TTextMinerConfig {
     { Name = "BornFact" }
   ]
 
-  Output = {
-    Format = text;
+   Output = {
+    File = "facts.txt";
+    Format = text;        // можно использовать следующие форматы:
+                          // proto (Google Protobuf), xml, text
   }
 }
