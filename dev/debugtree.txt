@@ -42,6 +42,12 @@ S  ->  FIO[*Юрий] :: 0.66666666
         {Word%TERM,hreg1}  ->  Word[*Юрий] :: 0.66666666
             Word  ->  Юрий :: 1
 
+DROPPED OCCURRENCE, coverage: 1, weight: 0.35
+S  ->  FIO[*Гагарин] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Гагарин] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Гагарин] :: 0.66666666
+            Word  ->  Гагарин :: 1
+
 DROPPED OCCURRENCE, coverage: 3, weight: 0.33555555
 S  ->  Date[*пятницу , 9 марта] :: 0.35
     Date  ->  DayOfWeek[*пятницу]  Comma[,]  Day[9]  Month[марта] :: 0.35
@@ -155,8 +161,28 @@ S  ->  Date[*марта 1934 года] :: 0.36666666
 	главная_грамматика, 
 
 
+===================== main.cxx =====================
+
+coverage: 1, weight: 0.33555555
+S  ->  FIO[*Гжатского] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Гжатского] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Гжатского] :: 0.66666666
+            Word  ->  Гжатского :: 1
+
+coverage: 1, weight: 0.33391812
+S  ->  FIO[*Смоленской] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Смоленской] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Смоленской] :: 0.66666666
+            Word  ->  Смоленской :: 1
+
+
+
 ==================== multiwords ====================
 
+Гжатского: TAuxDicArticle, 
+	главная_грамматика, 
+Смоленской: TAuxDicArticle, 
+	главная_грамматика, 
 
 
 ===================== main.cxx =====================
@@ -193,11 +219,23 @@ S  ->  FIO[*Алексей] :: 0.66666666
         {Word%TERM,hreg1}  ->  Word[*Алексей] :: 0.66666666
             Word  ->  Алексей :: 1
 
+DROPPED OCCURRENCE, coverage: 1, weight: 0.33443223
+S  ->  FIO[*Гагарин] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Гагарин] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Гагарин] :: 0.66666666
+            Word  ->  Гагарин :: 1
+
 DROPPED OCCURRENCE, coverage: 1, weight: 0.33364102
 S  ->  FIO[*Анна] :: 0.66666666
     FIO  ->  {Word%TERM,hreg1}[*Анна] :: 0.66666666
         {Word%TERM,hreg1}  ->  Word[*Анна] :: 0.66666666
             Word  ->  Анна :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.33359788
+S  ->  FIO[*Матвеева] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Матвеева] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Матвеева] :: 0.66666666
+            Word  ->  Матвеева :: 1
 
 
 
@@ -439,6 +477,125 @@ S  ->  FIO[*Андрей] :: 0.66666666
 ==================== multiwords ====================
 
 Андрей: TAuxDicArticle, 
+	главная_грамматика, 
+
+
+===================== main.cxx =====================
+
+coverage: 1, weight: 0.43333333
+S  ->  FIO[*Григорьев] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Григорьев] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Григорьев] :: 0.66666666
+            Word  ->  Григорьев :: 1
+
+
+
+==================== multiwords ====================
+
+Григорьев: TAuxDicArticle, 
+	главная_грамматика, 
+
+
+===================== main.cxx =====================
+
+coverage: 2, weight: 0.36666666
+S  ->  FIO[*Джон Григорьев] :: 0.43333333
+    FIO  ->  {Word%TERM,hreg1}[*Джон]  {Word%TERM,hreg1}[Григорьев] :: 0.43333333
+    |   
+    |__ {Word%TERM,hreg1}  ->  Word[*Джон] :: 0.66666666
+    |       Word  ->  Джон :: 1
+    |   
+    |__ {Word%TERM,hreg1}  ->  Word[*Григорьев] :: 0.66666666
+            Word  ->  Григорьев :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.43333333
+S  ->  FIO[*Джон] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Джон] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Джон] :: 0.66666666
+            Word  ->  Джон :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36666666
+S  ->  FIO[*Григорьев] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Григорьев] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Григорьев] :: 0.66666666
+            Word  ->  Григорьев :: 1
+
+
+
+==================== multiwords ====================
+
+Джон_Григорьев: TAuxDicArticle, 
+	главная_грамматика, 
+
+
+===================== main.cxx =====================
+
+coverage: 2, weight: 0.33809523
+S  ->  FIO[*Григорьев Антон] :: 0.43333333
+    FIO  ->  {Word%TERM,hreg1}[*Григорьев]  {Word%TERM,hreg1}[Антон] :: 0.43333333
+    |   
+    |__ {Word%TERM,hreg1}  ->  Word[*Григорьев] :: 0.66666666
+    |       Word  ->  Григорьев :: 1
+    |   
+    |__ {Word%TERM,hreg1}  ->  Word[*Антон] :: 0.66666666
+            Word  ->  Антон :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.34
+S  ->  FIO[*Григорьев] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Григорьев] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Григорьев] :: 0.66666666
+            Word  ->  Григорьев :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.33809523
+S  ->  FIO[*Антон] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Антон] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Антон] :: 0.66666666
+            Word  ->  Антон :: 1
+
+
+
+==================== multiwords ====================
+
+Григорьев_Антон: TAuxDicArticle, 
+	главная_грамматика, 
+
+
+===================== main.cxx =====================
+
+coverage: 3, weight: 0.34333333
+S  ->  FIO[*Силантьева Г. Н.] :: 0.36666666
+    FIO  ->  {Word%TERM,hreg1}[*Силантьева]  {AnyWord%TERM}[Г.]  {AnyWord%TERM}[Н.] :: 0.36666666
+    |   
+    |__ {Word%TERM,hreg1}  ->  Word[*Силантьева] :: 0.66666666
+    |       Word  ->  Силантьева :: 1
+    |   
+    |__ {AnyWord%TERM}  ->  AnyWord[*Г.] :: 0.66666666
+    |       AnyWord  ->  Г. :: 1
+    |   
+    |__ {AnyWord%TERM}  ->  AnyWord[*Н.] :: 0.66666666
+            AnyWord  ->  Н. :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36666666
+S  ->  FIO[*Силантьева] :: 0.66666666
+    FIO  ->  {Word%TERM,hreg1}[*Силантьева] :: 0.66666666
+        {Word%TERM,hreg1}  ->  Word[*Силантьева] :: 0.66666666
+            Word  ->  Силантьева :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.35
+S  ->  FIO[*Силантьева Г.] :: 0.43333333
+    FIO  ->  {Word%TERM,hreg1}[*Силантьева]  {AnyWord%TERM}[Г.] :: 0.43333333
+    |   
+    |__ {Word%TERM,hreg1}  ->  Word[*Силантьева] :: 0.66666666
+    |       Word  ->  Силантьева :: 1
+    |   
+    |__ {AnyWord%TERM}  ->  AnyWord[*Г.] :: 0.66666666
+            AnyWord  ->  Г. :: 1
+
+
+
+==================== multiwords ====================
+
+Силантьева_Г._Н.: TAuxDicArticle, 
 	главная_грамматика, 
 
 
