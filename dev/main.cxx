@@ -3,3 +3,4 @@
 #include <fio.cxx>
 
 S -> FIO (Date);
+S -> (FIO) Date;
