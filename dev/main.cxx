@@ -5,4 +5,4 @@
 
 S -> FIO ;
 S ->  Date;
-S ->  Place interp (Place.Name);
+S ->  Placeinfo;
