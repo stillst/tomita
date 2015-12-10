@@ -8,9 +8,9 @@ Year -> Year YearDescr;
         // день недели, запятая, число, месяц и год:
         // "понедельник, 3 сентября 2012г."
 Date -> DayOfWeek interp (Date.DayOfWeek) (Comma)
-        Day interp (Date.Day) 
+        Day interp (Date.Day)
         Month interp (Date.Month)
-        (Year interp (Date.Year)); 
+        (Year interp (Date.Year));
         // число, месяц и год: "10 января 2011"
 Date -> Day interp (Date.Day)
         Month interp (Date.Month)
@@ -18,3 +18,10 @@ Date -> Day interp (Date.Day)
         // месяц и год: "июнь 2009"
 Date -> Month interp (Date.Month)
         Year interp (Date.Year);
+
+Date -> Day  interp (Date.Day)  (Punct)
+        AnyWord<wff=/(0?[1-9]{1,2})/> interp (Date.Month) (Punct)
+        Year interp (Date.Year)|
+        AnyWord<wff=/(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}/> interp (Date.Day)
+        ;
+
