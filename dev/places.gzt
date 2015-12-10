@@ -1,0 +1,11 @@
+encoding "utf8";
+
+TAuxDicArticle "место"
+{
+    key = "деревня" | "посёлок" | "город" | "область" | "район"
+}
+
+TAuxDicArticle "местоположение"
+{
+    key = { "tomita:places.cxx" type=CUSTOM }
+}

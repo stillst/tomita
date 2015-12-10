@@ -1,6 +1,8 @@
 #encoding "utf-8"
 #include <date.cxx>
 #include <fio.cxx>
+#include <places.cxx>
 
-S -> FIO (Date);
-S -> (FIO) Date;
+S -> FIO ;
+S ->  Date;
+S ->  Place interp (Place.Name);

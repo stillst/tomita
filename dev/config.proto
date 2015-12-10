@@ -24,6 +24,7 @@ TTextMinerConfig
   Facts =
   [
     { Name = "Date"  },
-    { Name = "FIO"  }
+    { Name = "FIO"  },
+    { Name = "Place"  }
   ]
 }

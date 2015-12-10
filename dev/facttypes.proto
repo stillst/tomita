@@ -15,3 +15,8 @@ message FIO: NFactType.TFact
     optional string Surname = 2;
     optional string Patronymic = 3;
 }
+
+message Place: NFactType.TFact
+{
+    optional string Name = 1;
+}
