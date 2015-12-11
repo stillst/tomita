@@ -25,6 +25,7 @@ TTextMinerConfig
   [
     { Name = "Date"  },
     { Name = "FIO"  },
-    { Name = "Place"  }
+    { Name = "Place"  },
+    { Name = "GeoPolitic"  }
   ]
 }
